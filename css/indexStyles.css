@@ -4,25 +4,25 @@ h1 {
 }
 
 .navbar{
-background-color: rgba(99, 189, 216, 0.432);
+background-color: #416788;
 }
 
 
 h3{
     
-    color: #4997e0b4;
+    color: #2E4960;
 }
 
 
 .card-sl {
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 4px 0 #BE8A60, 0 4px 10px 0 #BE8A60;
+    background-color: #f7f7f7;
 }
-
 #classesid {
-    
-    max-height: 100%;
-    max-width: 100%; 
+    background-color: #f7f7f7;
+    height: 100%;
+    width: 100%;
     border-radius: 10px 10px 10px 10px; 
     
 }
@@ -30,7 +30,6 @@ h3{
 .card-heading {
     font-size: 18px;
     font-weight: bold;
-    background: #fff;
     padding: 10px 15px;
 }
 
@@ -41,26 +40,38 @@ h3{
     color: #636262;
 }
 
-.card-button {
+
+.textoAlineado{
+    word-wrap: break-word; /*Esto es para que la palabra no se salga del cuadro de texto*/
+    /*overflow: y hidden; Esto es para que las palabras restantes se puedan ver con u desplazmiento de barra lateral, no es muy recomendable*/
+}
+
+.formularioAD:hover {
+    cursor: poin;
+}
+
+#SearchDiv{
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    width: 100%;
-    background-color: #1F487E;
-    color: #fff;
-    border-radius: 0 0 8px 8px;
+    align-items: center;
+    padding: 50px;
 }
 
-.card-button:hover {
-    text-decoration: none;
-    background-color: #1D3461;
-    color: #fff;
+.Sstudent{
+   
+  
+    flex: auto;
+    align-items: center;
+    /* width: 50%; */
+    /* size: 1000px; */
+    padding: 5px;
+    border-radius: 20px ;
+    text-align: center;
+    background-color: transparent;
+   
+    
+    padding-left: 20px;
+    
+    
 
 }
-
-
-.iconosredes {
-    font-size: 2em;
-    padding-right: 1.5em;
-}
-
