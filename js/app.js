@@ -14,6 +14,11 @@ let btnGuardar = document.getElementById("btnGuardar");
 let listaTareas = document.getElementById("listaTareas");
 let idTarea = document.getElementById("idTarea");
 
+let formularioAlumno = document.getElementById("formularioAlumno");
+let btnGuardarAlumno = document.getElementById("btnGuardarAlumno")
+
+
+
 let tareas = [];
 
 let agregarDatos = () => {
@@ -86,11 +91,11 @@ formulario.addEventListener("submit", (e) => {
 
 
 let borrarTarea = (boton, indice) => {
-    if (confirm("¿Esta seguro de querer eliminar esta tarea?")) //"Confirm": Funcion de JavaScript usada para confirar una decision en el navegador con una ventana "Pop Up"
+    if (confirm("¿Do you want to delete this grade?")) //"Confirm": Funcion de JavaScript usada para confirar una decision en el navegador con una ventana "Pop Up"
     {
         boton.parentElement.parentElement.remove(); //Esta funcion hace que se elimine el padre del padre del elemento deseado
         tareas.splice(indice, 1);
-        window.alert("Tarea Eliminada");
+        window.alert("Grade Deleted");
     }
 }
 
@@ -118,3 +123,16 @@ formularioEditar.addEventListener("submit", (e) => {
     cerrarModalEditar();
     window.alert("Tarea Editada");
 });
+
+formularioAlumno.addEventListener("submit", (e) => {
+    btnGuardarAlumno.click();
+    if (confirm("¿Quiere Confirmar?")) //"Confirm": Funcion de JavaScript usada para confirar una decision en el navegador con una ventana "Pop Up"
+    {
+        
+        window.alert("Seleccion Confirmada");
+    }
+});
+
+
+
+
